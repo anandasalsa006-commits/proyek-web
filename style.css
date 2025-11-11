@@ -1,0 +1,188 @@
+/* Palet Warna: Coklat Tua (#4B3832), Krem (#EFEBE9), Merah Kopi (#A0522D), Hitam (#1C1C1C) */
+
+/* ---------------------------------- */
+/* 1. RESET DAN FONT DASAR */
+/* ---------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Font elegan untuk judul */
+    color: #1C1C1C; /* Teks hitam gelap */
+    line-height: 1.6;
+    background-color: #F8F8F8; /* Latar belakang sangat terang */
+}
+
+a {
+    text-decoration: none;
+    color: #4B3832; /* Coklat tua untuk link */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #A0522D; /* Merah kopi saat di-hover */
+}
+
+/* ---------------------------------- */
+/* 2. HEADER DAN NAVIGASI */
+/* ---------------------------------- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #EFEBE9; /* Krem lembut untuk header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4B3832; /* Coklat tua */
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.main-nav a {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Tombol CTA di Navigasi */
+.btn-cta {
+    background-color: #A0522D; /* Merah kopi */
+    color: #EFEBE9 !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.btn-cta:hover {
+    background-color: #8B4513; /* Coklat lebih gelap */
+}
+
+/* ---------------------------------- */
+/* 3. HERO SECTION */
+/* ---------------------------------- */
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover; /* Ganti dengan gambar kopi yang bagus */
+    color: #fff;
+    height: 70vh; /* Tinggi yang nyaman */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Overlay gelap untuk kontras teks */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Tombol Utama */
+.btn-primary {
+    display: inline-block;
+    background-color: #A0522D;
+    color: #EFEBE9 !important;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4B3832;
+}
+
+/* ---------------------------------- */
+/* 4. SECTION MENU DAN ITEM */
+/* ---------------------------------- */
+.menu-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #EFEBE9;
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    color: #4B3832;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    color: #A0522D;
+    margin-bottom: 5px;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1C1C1C;
+    font-size: 1.1rem;
+}
+
+/* Tombol Sekunder (Lihat Seluruh Menu) */
+.btn-secondary {
+    display: inline-block;
+    color: #4B3832;
+    border: 2px solid #4B3832;
+    padding: 10px 25
